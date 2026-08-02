@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Update Case</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Update Case</h1>
+
+    <input type="text" id="searchId" placeholder="Enter Case ID">
+    <button onclick="loadCase()">Load Case</button>
+
+    <hr>
+
+    <form id="updateForm">
+
+        <input type="text" id="title" placeholder="Title"><br><br>
+
+        <input type="text" id="complainant" placeholder="Complainant"><br><br>
+
+        <input type="text" id="phone" placeholder="Phone"><br><br>
+
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <br><br>
+
+        <select id="status">
+            <option>Open</option>
+            <option>Under Investigation</option>
+            <option>Closed</option>
+        </select>
+
+        <br><br>
+
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <br><br>
+
+        <button type="button" onclick="updateCase()">
+            Update Case
+        </button>
+
+    </form>
+
+    <script src="js/update_case.js"></script>
+
+</body>
+
+</html>
