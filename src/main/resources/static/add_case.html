@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigation Case Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Add New Case</h1>
+
+    <form id="caseForm">
+
+        <label>Case ID</label><br>
+        <input type="text" id="caseId"><br><br>
+
+        <label>Title</label><br>
+        <input type="text" id="title"><br><br>
+
+        <label>Complainant</label><br>
+        <input type="text" id="complainant"><br><br>
+
+        <label>Phone</label><br>
+        <input type="text" id="phone"><br><br>
+
+        <label>Priority</label><br>
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select><br><br>
+
+        <label>Status</label><br>
+        <select id="status">
+            <option>Open</option>
+            <option>Under Investigation</option>
+            <option>Closed</option>
+        </select><br><br>
+
+        <label>Description</label><br>
+        <textarea id="description"></textarea><br><br>
+
+        <button type="submit">Save Case</button>
+
+    </form>
+
+    <script src="js/add_case.js"></script>
+
+</body>
+
+</html>
